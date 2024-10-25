@@ -1,0 +1,94 @@
+.BadList {
+  width: 100%;
+  overflow-x: scroll;
+  /* background-color: rgb(0, 87, 0); */
+  padding: 60px 40px;
+}
+
+
+.BadList-ul {
+  min-width: 920px;
+}
+
+.BadList-li {
+  border-bottom: 1px solid #fff;
+  display: flex;
+}
+
+.BadList-li.error {
+  background-color: #fa00007d;
+  position: relative;
+}
+
+.BadList-li.error::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 10px);
+  translate: 0 -50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 20px;
+  background-color: #fa00007d;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.BadList-li:last-child {
+  border-bottom: none;
+}
+
+.BadList-li div {
+  border-right: 1px solid #fff;
+  padding: 8px 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.BadList-li div:last-child {
+  border-right: none;
+}
+
+.BadList-li .name {
+  width: 100px;
+}
+
+.BadList-li .date {
+  width: 100px;
+}
+
+.BadList-li .start {
+  width: 100px;
+}
+
+.BadList-li .end {
+  width: 100px;
+}
+
+.BadList-li .location {
+  width: 260px;
+}
+
+.BadList-li .note {
+  width: 260px;
+}
+
+.BadList-li .note .note-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+

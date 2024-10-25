@@ -33,7 +33,7 @@ interface Record {
 }
 
 function App() {
-  // 管理者のメールアドレス（ハードコードちゃった）
+  // 管理者のメールアドレス（とりあえず）
   const managerAddress = "terofam0802@gmail.com";
 
   // ログイン状態の管理

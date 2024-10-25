@@ -1,0 +1,85 @@
+.ManagerList {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 60px 40px;
+}
+
+.sort-options{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.sort-options input{
+  accent-color: #000;
+}
+
+.ManagerList-ul {
+  min-width: 920px;
+}
+
+.ManagerList-li {
+  border-bottom: 1px solid #fff;
+  display: flex;
+}
+
+.ManagerList-li.error {
+  background-color: #fa00007d;
+  position: relative;
+}
+
+.ManagerList-li.error::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 10px);
+  translate: 0 -50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 20px;
+  background-color: #fa00007d;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.ManagerList-li:last-child {
+  border-bottom: none;
+}
+
+.ManagerList-li div {
+  border-right: 1px solid #fff;
+  padding: 8px 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ManagerList-li div:last-child {
+  border-right: none;
+}
+
+.ManagerList-li .user {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.ManagerList-li .email {
+  width: 100%;
+}
+
+.ManagerList-li .date {
+  width: 200px;
+  flex-shrink: 0;
+}

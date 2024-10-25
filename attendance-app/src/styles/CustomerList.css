@@ -1,0 +1,128 @@
+.CustomerList {
+  width: 100%;
+  overflow-x: scroll;
+  /* background-color: rgb(0, 87, 0); */
+  padding: 60px 40px;
+}
+
+
+.month-navigation{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.month-navigation button{
+  color: #000;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.CustomerList-ul {
+  min-width: 920px;
+}
+
+.CustomerList-li {
+  border-bottom: 1px solid #fff;
+  display: flex;
+}
+
+.CustomerList-li.error {
+  background-color: #fa00007d;
+  position: relative;
+}
+
+.CustomerList-li.error::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 10px);
+  translate: 0 -50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 20px;
+  background-color: #fa00007d;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.CustomerList-li:last-child {
+  border-bottom: none;
+}
+
+.CustomerList-li div {
+  border-right: 1px solid #fff;
+  padding: 8px 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.CustomerList-li div:last-child {
+  border-right: none;
+}
+
+.CustomerList-li .name {
+  width: 100px;
+}
+
+.CustomerList-li .date {
+  width: 100px;
+}
+
+.CustomerList-li .start {
+  width: 100px;
+}
+
+.CustomerList-li .end {
+  width: 100px;
+}
+
+.CustomerList-li .location {
+  width: 260px;
+}
+
+.CustomerList-li .note {
+  width: 260px;
+}
+
+.CustomerList-li .note .note-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.CustomerList-li .note .note-inner textarea {
+  appearance: none;
+  color: #ffffff;
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  outline: none;
+}
+
+.CustomerList-li .note .note-inner button {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
