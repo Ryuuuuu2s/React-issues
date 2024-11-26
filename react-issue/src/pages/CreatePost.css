@@ -1,0 +1,100 @@
+.createPostPageContainer{
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchArea{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchArea input{
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.searchArea button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #4CAF50;
+  box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.searchArea button:hover{
+  box-shadow: none;
+  translate: 0px 2px;
+}
+
+
+.createPostPage{
+  display: flex;
+  justify-content: center;
+}
+
+.postContainer{
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 9px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.postContainer h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.inputPost textarea{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.postButton{
+  font-weight: bold;
+  background-color: #4CAF50;
+  box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.postButton:hover{
+  box-shadow: none;
+  translate: 0px 2px;
+}
+
+.postArea{
+  margin-top: 40px;
+  padding: 40px 0;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

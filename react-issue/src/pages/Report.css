@@ -1,0 +1,61 @@
+.Report {
+  max-width: 1200px;
+  width: 90% !important;
+  background-color: #f0f0f0;
+  margin: 50px auto 0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.date {
+  width: 100%;
+}
+
+.graphs {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.categoryGraph {
+  width: calc(40% - 10px);
+}
+
+.barGraph {
+  width: calc(60% - 10px);
+}
+
+.categoryGraph,
+.barGraph {
+  -webkit-flex-basis: unset !important;
+  -ms-flex-preferred-size: unset !important;
+  flex-basis: unset !important;
+  -webkit-box-flex: unset !important;
+  -webkit-flex-grow: unset !important;
+  -ms-flex-positive: unset !important;
+  flex-grow: 0;
+}
+
+.table {
+  width: 100%;
+}
+
+.graphsPaper {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .graphs {
+    flex-direction: column;
+  }
+
+  .categoryGraph,
+  .barGraph {
+    width: 100%;
+  }
+}

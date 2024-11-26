@@ -1,0 +1,63 @@
+
+.SettingContainer{
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settingArea{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 9px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.settingArea h2{
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.settingAreaContent{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settingAreaContent input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.settingAreaContent button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #4CAF50;
+  box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.settingAreaContent button.deleteAccountButton{
+  background-color: #919191;
+}
+
+.settingAreaContent button:hover{
+  box-shadow: none;
+  translate: 0px 2px;
+}

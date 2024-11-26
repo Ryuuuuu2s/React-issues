@@ -1,0 +1,185 @@
+
+.postItem{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 9px 15px -5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.SearchResult{
+  padding: 50px 0;
+  margin: 50px 0;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.SearchResult h2{
+  text-align: center;
+}
+
+
+.postItemWhopper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postItemContent{
+  display: flex;
+  gap: 10px;
+}
+
+.postItemContent .img{
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  height: fit-content;
+  width: 50px;
+  flex-shrink: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.postItemContent .text{
+  word-break: break-all;
+  padding-top: 0.8rem;
+}
+
+.postName{
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.postReaction{
+  display: flex;
+  gap: 20px;
+}
+
+.postReactionWhopper{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.postReaction .good{
+  color: pink;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.postReaction .good:hover{
+  opacity: 0.7;
+}
+
+.postReaction .response{
+  color: rgb(21, 0, 107);
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.postReaction .response:hover{
+  opacity: 0.7;
+}
+
+
+
+/* ------------------------------------------------- */
+.responseContainer{
+  border-top: solid 1px #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  display: none;
+}
+
+.responseContainer.active{
+  display: flex;
+}
+
+.responseInput{
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.responseInput textarea{
+  width: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.responseInput .responseButton{
+  width: 20%;
+  flex-shrink: 0;
+  background-color: rgb(21, 0, 107);
+  font-weight: bold;
+  box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 10px 0;
+}
+
+.responseInput .responseButton:hover{
+  box-shadow: none;
+  translate: 0px 2px;
+}
+
+
+.responseContent{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.responseItem{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.responseItemWhopper{
+  display: flex;
+  gap: 10px;
+}
+
+.responseIcon{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.responseItem .responseText{
+  font-size: 13px;
+}
+
+.responseItem .responseName{
+  font-size: 12px;
+  text-align: right;
+}
